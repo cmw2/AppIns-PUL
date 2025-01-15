@@ -18,6 +18,7 @@ namespace PartsUnlimited
         protected void Application_Start(object sender, EventArgs e)
         {
             AreaRegistration.RegisterAllAreas();
+            ApplicationInsightsConfig.Configure();
 
             Database.SetInitializer(new PartsUnlimitedDbInitializer());
 
